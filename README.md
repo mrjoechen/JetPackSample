@@ -2,6 +2,18 @@
 An android Jetpack sample project.
 
 
+
+- Databinding
+- Lifecycles
+- LiveData
+- Navigation
+- Paging
+- Room
+- ViewModel
+- WorkManager
+
+
+
 #### Navigation 
 
 
