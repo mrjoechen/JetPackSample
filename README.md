@@ -132,5 +132,5 @@ An android Jetpack sample project.
 
 #### Lifecycle
 
-![Lifecycle](./images/lifecycle.png)
+![Lifecycle](./images/lifecycle-states.svg)
 
