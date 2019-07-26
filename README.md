@@ -1,8 +1,6 @@
 # JetPackSample
 An android Jetpack sample project.
 
-
-
 - Databinding
 - Lifecycles
 - LiveData
