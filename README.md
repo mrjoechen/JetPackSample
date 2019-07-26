@@ -18,6 +18,7 @@ An android Jetpack sample project.
 
 
 1. Module中加入依赖
+
 ```
     dependencies {
         def nav_version = '1.0.0-alpha01'
