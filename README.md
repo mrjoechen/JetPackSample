@@ -1,16 +1,29 @@
 # JetPackSample
-An android Jetpack sample project.
+> ### An android Jetpack sample project.
 
-* [Databinding](#1)
-* [Lifecycles](#2)
-* [LiveData](#3)
-* [Navigation](#4)
-* [Paging](#5)
-* [Room](#6)
-* [ViewModel](#7)
-* [WorkManager](#8)
 
-<h3 id="4">Navigation</h3>
+- [Databinding](#databinding)
+- [Lifecycles](#lifecycles)
+- [LiveData](#livedata)
+- [Navigation](#navigation)
+- [Paging](#paging)
+- [Room](#room)
+- [ViewModel](#viewmodel)
+- [WorkManager](#workmanager)
+
+### Databinding
+
+
+### Lifecycles
+
+![Lifecycle](./images/lifecycle-states.svg)
+
+
+### LiveData
+
+
+
+### Navigation
 
 1. Module中加入依赖
 
@@ -37,9 +50,9 @@ An android Jetpack sample project.
     
     class Page2Fragment : Fragment() {
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_page2, container, false)
+        override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
+                                  savedInstanceState: Bundle?): View? {
+            return inflater.inflate(R.layout.fragment_page2, container, false)
     }
 }
 ```
@@ -126,7 +139,21 @@ An android Jetpack sample project.
     Navigation.findNavController(params).navigate(actionId);
 ```
 
-<h3 id="2">Lifecycle</h3>
 
-![Lifecycle](./images/lifecycle-states.svg)
+
+### Paging
+
+
+### Room
+
+
+### ViewModel
+
+### WorkManager
+
+
+### test
+
+
+
 
