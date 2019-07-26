@@ -128,3 +128,9 @@ An android Jetpack sample project.
     Navigation.findNavController(params).navigateUp();
     Navigation.findNavController(params).navigate(actionId);
 ```
+
+
+#### Lifecycle
+
+![Lifecycle](./images/lifecycle.png)
+
