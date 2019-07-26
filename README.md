@@ -1,20 +1,16 @@
 # JetPackSample
 An android Jetpack sample project.
 
-* [语法示例](#2)
+* [Databinding](#1)
+* [Lifecycles](#2)
+* [LiveData](#3)
+* [Navigation](#4)
+* [Paging](#5)
+* [Room](#6)
+* [ViewModel](#7)
+* [WorkManager](#8)
 
-- Databinding
-- Lifecycles
-- LiveData
-- Navigation
-- Paging
-- Room
-- ViewModel
-- WorkManager
-
-
-
-#### Navigation 
+<h3 id="4">Navigation</h3>
 
 1. Module中加入依赖
 
@@ -130,10 +126,7 @@ An android Jetpack sample project.
     Navigation.findNavController(params).navigate(actionId);
 ```
 
-<h2 id="2">1.语法示例</h2>
-
-
-#### Lifecycle
+<h3 id="2">Lifecycle</h3>
 
 ![Lifecycle](./images/lifecycle-states.svg)
 
