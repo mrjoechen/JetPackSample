@@ -1,1 +1,1 @@
-include ':app', ':navigation', ':lifecycle'
+include ':app', ':navigation', ':lifecycle', ':room'
