@@ -17,6 +17,6 @@ class MainActivity : AppCompatActivity() {
 
 
         val db = Room.databaseBuilder(applicationContext,
-                AppDatabase::class.java, "database-name").build()
+                AppDatabase::class.java, "user_database").build()
     }
 }
