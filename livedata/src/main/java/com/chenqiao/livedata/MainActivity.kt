@@ -2,7 +2,6 @@ package com.chenqiao.livedata
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import kotlinx.android.synthetic.main.activity_main.*
@@ -27,11 +26,14 @@ class MainActivity : AppCompatActivity() {
 
         // Observe the LiveData, passing in this activity as the LifecycleOwner and the observer.
         model.currentName.observe(this, nameObserver)
+        model.nameListData.observe(this,  Observer<List<String>> { list -> list.forEach{ println(it) }})
 
 
         update.setOnClickListener{
-            val anotherName = "John Doe"
-            model.currentName.setValue(anotherName)
+            val anotherName = "John Doe /" + Math.random()
+            model.currentName.value = anotherName
+
+            model.nameListData.value = listOf("aaa", "bbb", "ccc", "ddd")
 
         }
 
