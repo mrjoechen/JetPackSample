@@ -29,9 +29,15 @@
 
 ```
     dependencies {
-        def nav_version = '1.0.0-alpha01'
-        implementation "android.arch.navigation:navigation-fragment:$nav_version"
-        implementation "android.arch.navigation:navigation-ui:$nav_version"
+        def nav_version = "2.1.0"
+
+        // Java language implementation
+        implementation "androidx.navigation:navigation-fragment:$nav_version"
+        implementation "androidx.navigation:navigation-ui:$nav_version"
+    
+        // Kotlin
+        implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+        implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
     }
 ```
 
