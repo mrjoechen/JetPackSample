@@ -6,6 +6,7 @@ import androidx.room.PrimaryKey;
 
 @Entity
 public class User {
+
     @PrimaryKey(autoGenerate = true)
     private int uid;
 
@@ -28,6 +29,11 @@ public class User {
         return uid;
     }
 
+    public void setUid(int uid) {
+        this.uid = uid;
+    }
+
+
     public String getFirstName() {
         return firstName;
     }
@@ -42,5 +48,14 @@ public class User {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "uid=" + uid +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
     }
 }

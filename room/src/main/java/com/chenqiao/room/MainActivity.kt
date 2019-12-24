@@ -1,15 +1,17 @@
 package com.chenqiao.room
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v4.app.SupportActivity
-import android.support.v4.app.SupportActivity.ExtraData
-import android.support.v4.content.ContextCompat.getSystemService
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
+import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import androidx.room.Room
+import kotlin.concurrent.thread
 
-
+/**
+ *
+ */
 class MainActivity : AppCompatActivity() {
+
+    private val TAG = "MainActivity-TAG"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,6 +19,15 @@ class MainActivity : AppCompatActivity() {
 
 
         val db = Room.databaseBuilder(applicationContext,
-                AppDatabase::class.java, "user_database").build()
+                AbstractAppDatabase::class.java, "user_database").build()
+
+        thread { db.userDao().insertAll(User("test1FirstName", "test1LastName"))
+
+            val all = db.userDao().all.toString()
+            Log.i(TAG, all)
+        }
+
+
+
     }
 }
