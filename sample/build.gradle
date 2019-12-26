@@ -80,4 +80,13 @@ dependencies {
 //    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$rootProject.coroutinesVersion"
 //    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$rootProject.coroutinesVersion"
 
+    def retrofitVersion = '2.6.0'
+    def retrofitConverterGsonVersion = '2.3.0'
+    def retrofitConverterScalarsVersion = '2.5.0'
+
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitConverterGsonVersion"
+    implementation "com.squareup.retrofit2:converter-scalars:$retrofitConverterScalarsVersion"
+
+
 }
