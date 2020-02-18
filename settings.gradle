@@ -1,1 +1,1 @@
-include ':app', ':navigation', ':lifecycle', ':room', ':livedata', ':sample'
+include ':app', ':navigation', ':lifecycle', ':room', ':livedata', ':sample', ':coroutinue'
