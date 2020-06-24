@@ -3,6 +3,7 @@ package com.chenqiao.coroutinue
 import okhttp3.OkHttpClient
 import okhttp3.ResponseBody
 import okhttp3.logging.HttpLoggingInterceptor
+import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.FormUrlEncoded
@@ -39,7 +40,10 @@ fun getNetworkService() = service
 interface GithubInterface{
 
     @GET("/article/list/{page}/json")
-    suspend fun repos(@Path("page")page: String): ResponseBody
+    suspend fun reposWithSuspend(@Path("page")page: String): ResponseBody
+
+    @GET("/article/list/{page}/json")
+    fun repos(@Path("page")page: String): Call<ResponseBody>
 
 }
 
